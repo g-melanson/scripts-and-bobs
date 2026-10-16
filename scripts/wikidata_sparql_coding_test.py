@@ -1,3 +1,17 @@
+"""
+This script was written as part of a technical screen.
+The instructions provided the assertions at the bottom of the file
+and asked for the empty ask() function to be completed.
+
+The approach I took, given a user question:
+- Regex match the question intent and extract target entities.
+- Connect to Wikidata's entities web search to get entity IDs.
+- Use the entity IDs and intent to query the SPARQL endpoint.
+
+Something I would do differently is handle query-setting in ask() better.
+"""
+
+
 import json, re, time
 from dataclasses import dataclass, asdict
 from urllib.parse import urlencode
