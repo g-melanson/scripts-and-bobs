@@ -1,3 +1,13 @@
+"""
+This script was written as part of a technical screen.
+The instructions provided the assertions at the bottom of the file
+and asked for the empty ask() function to be completed.
+
+The approach I took, given a user question:
+
+"""
+
+
 import json, re, time
 from dataclasses import dataclass, asdict
 from urllib.parse import urlencode
